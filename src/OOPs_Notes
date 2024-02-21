@@ -1,0 +1,52 @@
+
+Encapsulation :
+1. Binding of data and behaviour i.e ;store all attr and behaviour of an idea together. (using class)
+2. Protect the data from illegitimate access. (achieved using Access modifier)
+
+Class :
+1. represents structure of an idea.
+2. not a real entity but an idea
+
+Object :
+1.real instance of a class.
+2. each object is totally isolated from other objects.
+3. occupies memory
+
+Constructor :
+
+In Java, no object can be created without constructor.
+We always need a constructor
+If we dont add any constructor java will add a default constructor.
+
+Student s = new Student();
+Student --> className
+s --> reference variable in stack
+new --> asking constructor to create new object
+Student() --> constructor in heap
+
+Types of Constructor :
+1. Default constructor
+2. No arguments constructor
+3. custom/ Arguments / Parameterised constructor
+4. copy constructor
+
+Default Constructor :
+If we dont add any constructor to the class java will add a default constructor (internally /not visible to our eyes)
+If we add any constructor java will not add default constructor.
+Initialises all attributes to default values.
+
+No Args Constructor :
+A constructor created by developer, which does not take any input/parameters/arguments and might intialise the
+attributes to default values or something else
+
+custom/ Arguments / Parameterised constructor :
+A constructor created by developer, which takes a set of values as attributes/parameters and use these values to intialise
+the attributes of the object that it is creating.
+
+
+SHALLOW COPY :
+Only new reference variable is created, pointing to the same old object
+
+DEEP COPY :
+Both reference variable  & Object are created new, but object has same attribute values as older
+object.
