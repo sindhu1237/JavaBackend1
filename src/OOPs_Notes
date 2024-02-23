@@ -50,3 +50,11 @@ Only new reference variable is created, pointing to the same old object
 DEEP COPY :
 Both reference variable  & Object are created new, but object has same attribute values as older
 object.
+
+Package : Folder of Classes
+getter/setter methods public : door to access the attributes.
+Access Modifiers :
+
+Inheritance :
+Ability to copy attributes & behaviors from a parent class to child class is called inheritance
+
