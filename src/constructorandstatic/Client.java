@@ -1,5 +1,7 @@
 package constructorandstatic;
 
+import inheritanceandpolymorphism.Employee;
+
 public class Client {
     public static void main(String[] args) {
         Student s = new Student();
@@ -33,5 +35,8 @@ public class Client {
         s20.display();
 
         FixedDeposit.printFDDetails();
+
+        Employee e =  new Employee();
+//        e.id = 37;
     }
 }
