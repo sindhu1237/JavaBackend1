@@ -17,6 +17,7 @@ Constructor :
 In Java, no object can be created without constructor.
 We always need a constructor
 If we dont add any constructor java will add a default constructor.
+constructr intialises but setter assigns
 
 Student s = new Student();
 Student --> className
@@ -58,3 +59,18 @@ Access Modifiers :
 Inheritance :
 Ability to copy attributes & behaviors from a parent class to child class is called inheritance
 
+
+upcasting : child object being refered by a parent type
+            referee variable (implicit)
+            ex : Animal A = new Dog();
+downcasting : parent object being refered by a child type
+              referee variable (explicit)
+              Dog D= new Animal();
+
+
+Method Overloading :
+Same method name but different parameters.
+overloading happens in same class.
+
+Method Overiding :
+Child class having the same method signature(parent), but different logic in child class
