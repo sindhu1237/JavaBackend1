@@ -19,5 +19,24 @@ public class Client {
         A.speak();
 
         Instructor i = new Instructor(37,"sindhu.rudraboina@gmail.com", "password", 4);
+
+        Human h = new Human();
+        h.breathing();
+        h.eating();
+
+        //When reference variable of parent type is used
+        //to refer a child class object -> Upcasting
+        //Upcasting is implicit.
+
+        Human hWorker = new Worker(); //upcasting
+        hWorker.eating();
+        hWorker.breathing();
+
+        //downcasting -> referring to parent using
+        // child type reference variable.
+        // Explicit because we need to mention the downcasting
+        Worker w = (Worker)new Human();
+        w.getSalary(); // downcasting is very prone to errors and will fail multiple time
+        // Downcasting is not preffered.
     }
 }
