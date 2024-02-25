@@ -17,7 +17,9 @@ Constructor :
 In Java, no object can be created without constructor.
 We always need a constructor
 If we dont add any constructor java will add a default constructor.
-constructr intialises but setter assigns
+constructor initialises but setter assigns.
+★★🔭If we want to create objects with Specific values and pass them while creating objects we will create
+parameterised Constructors
 
 Student s = new Student();
 Student --> className
@@ -74,3 +76,35 @@ overloading happens in same class.
 
 Method Overiding :
 Child class having the same method signature(parent), but different logic in child class
+
+
+Object in memory :
+2 types
+1. Primitive variables or value types
+2. Reference variables
+3. Strings
+
+Primitive variables :
+byte, short, int, long => default value is 0.
+char => \u000 => empty space
+float, double => 0.0
+boolean => false
+Different default values for each primitive variable.
+
+1. Value types/ primitive variables are stored in stack
+2. Local variables are not initialized to default values.
+3. Class level/ instance level variables are initialized with default values.
+
+Reference Variable :
+Object stored in heap, and address stored in stack.
+Default value is null.
+
+Java is always "call by value" or "pass by value".
+Variable type => primitive => values were passed to function.
+Variable type => Refernce => address => called by value, passed the address of object.
+
+How object attributes are initialized inside constructor ?
+1.Creates an object with all default values.
+2. Executes the code line by line inside a constructor.
+
+
