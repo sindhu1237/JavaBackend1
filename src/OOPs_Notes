@@ -107,4 +107,6 @@ How object attributes are initialized inside constructor ?
 1.Creates an object with all default values.
 2. Executes the code line by line inside a constructor.
 
-
+➤ When creating a new object with old object values, using a constructor and passing an object as a
+parameter can save time and effort. However, it is important to remember to create a new parameterized
+constructor that includes the object passed as a parameter.
