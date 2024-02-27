@@ -1,0 +1,80 @@
+source code => executable code => process
+source code or executable code lives on hard-disk.
+Program :
+1. Hard-disk
+2. Passive (cannot do anything by itself or cannot produce action).
+3. CPU is not giving its cycles to program.
+
+Process :
+1. RAM
+2. Active
+3. CPU is executing the process.
+
+Q: Where does process lives?
+process lives on RAM.
+
+
+Process : lives in RAM
+3 steps
+1.Process Control Block :
+    pid,
+    list of files opened by process
+    Memory limit
+    COPY OF REGISTERS
+2.Process Paging Table
+    virtual memory
+3.Process Address Space
+    code of memory
+    stack
+    heap
+
+CPU :
+CPU consists of registers
+Based on architecture the registers count increases (20 - 40 registers)
+Program Counter is the important register.
+
+What does program counter contain?
+Program counter contains address of next instruction.
+
+CPU scheduling : CPU scheduling is a process by which the operating system switches the CPU's
+attention between different running processes in the RAM. The CPU executes instructions from
+one process at a time, and then moves on to the next process. This happens quickly and repeatedly,
+giving the impression that all processes are running simultaneously.
+However, in reality, the CPU is constantly moving and shuffling between processes to execute their
+instructions in a timely manner.
+
+Context Switch : When switching from process P2 to P1, the CPU sends register values to the PCB
+of P1, and fetches register values for the PCB of P2.
+
+
+Threads :
+
+In computer programming, a thread is a unit of execution within a process.
+A process is a self-contained unit of execution with its own memory space.
+Within a process, multiple threads can run concurrently.
+Threads within the same process share resources like memory, but each thread has its own
+program counter, registers, and stack.
+
+Example :
+Take Google Chrome, for example. When it downloads and allows UI interaction simultaneously, it
+likely involves multiple threads. One thread could handle the download operation, while another
+manages the user interface. This enables users to interact with the browser without being blocked
+by the download process.
+
+Multithreading is a technique used to improve the performance and responsiveness of applications.
+By executing multiple threads concurrently, tasks can be performed in parallel. This makes
+better use of modern multi-core processors and provides a more responsive user experience.
+
+
+CPU executes thread in a process.
+
+✶✶✶✶✶     Code for creating threads:       ✶✶✶✶✶
+
+1. Identify the tasks that you want to execute concurrently.
+2. Create a new class that implements the Runnable interface.
+3. Override the run() method in the new class.
+4. Write the logic for the concurrent work or task in the run() method.
+5. Create an object of the new class.
+6. Create a thread using the object.
+7. Start the thread using the start() method.
+
