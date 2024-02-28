@@ -78,3 +78,24 @@ CPU executes thread in a process.
 6. Create a thread using the object.
 7. Start the thread using the start() method.
 
+
+CPU appears to run multiple processes and threads simultaneously, but it can only execute
+instructions of one thread at any given time.
+
+A core runs the CPU, and generally, a CPU has 4 cores. Each core is the real thing that runs
+instructions.
+
+If we have 4 cores, we can execute more than 4 threads due to the switching between p1.t1 and
+p2.t1. However, we can only execute 4 threads at the same time using 4 cores. If the cores are
+hyper-threading, then it is possible to execute more than 4 threads at the same time.
+Hyper-threading refers to a single core that can execute 2 threads at the same time.
+
+When you have multiple tasks to do, you may wonder whether to create separate processes or one
+process with multiple threads?
+It depends on the tasks. If the tasks are related and need to share data, it is best to divide
+them into threads of the same process.
+However, if the tasks are unrelated and unlikely to share data, it is better to create separate
+processes.
+
+To share data across processes, we use IPC (inter-process communication) which is complex and
+slow. Threads can easily share data via heap.
