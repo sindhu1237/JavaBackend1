@@ -12,3 +12,9 @@
 5. code the logic of task inside run method
 6. Thread t =new Thread(numberPrinter ref);
 7. t.start()
+
+* Client is playing two responsibilities 
+  * Defining the task to be done on a separate thread by making an object of number printer
+  * Making threads and assigning the task to be done two different threads.
+
+### Client is violating the single responsibility principle
