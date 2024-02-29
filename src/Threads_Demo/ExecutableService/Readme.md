@@ -1,0 +1,6 @@
+# Doubts
+
+Q1. Once a task is finished, we still need to clear the registers and pop data of previous task from the stack, then load up new data. Shouldn't that count as context switch?
+* Yes, you are correct. The process of saving the current state of a thread, including register values and stack information, before switching to another thread is indeed part of the context switch. A context switch involves storing the state of a currently executing thread so that it can be later restored when the operating system scheduler decides to switch to another thread. 
+* When a task is completed, or when the operating system decides to switch to another thread, the context of the current thread is saved, including register values and stack information. Then, the context of the next thread to be executed is restored. This process ensures that the execution of each thread is seamless and that each thread can resume from where it left off. 
+* In summary, the act of saving the state of a thread before switching to another thread, and later restoring that saved state, is considered a part of the context switch. Context switching is an essential mechanism in multitasking environments where multiple threads or processes share a single processor.
