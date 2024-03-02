@@ -14,7 +14,7 @@ public class Client {
         Future<List<Integer>> promiseOfaSortedList = es.submit(ms);
 
         List<Integer> SortedList = promiseOfaSortedList.get();
-        System.out.println(SortedList);
+        System.out.println(SortedList + " is processed by "+ Thread.currentThread().getName());
 
         es.shutdown();
     }
