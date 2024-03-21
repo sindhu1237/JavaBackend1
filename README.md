@@ -42,3 +42,16 @@ One of the common problems in multi-threading is the issue of synchronization. S
   `LinkedList<Integer> ll = new LinkedList<>(); `
   1. Heap consists of head, tail, and size.
   2. Doubly LinkedList
+
+
+- **Set**
+  * HashSet
+
+    `HashSet<Integer> hs = new HashSet<>(); `
+    1. HashSet stores its elements in a hash table, which is an array of linked lists. Each element in the hash table is a bucket that contains a linked list of elements that have the same hash code.
+
+    2. HashSet uses the `hashCode()` method to compute the hash code of each element and determine the bucket where it should be stored.
+    3. HashSet uses the `equals()` method to check if two elements are equal. If two elements are equal, HashSet ensures that only one of them is stored in the collection.
+    4. HashSet is not thread-safe, which means that multiple threads can modify the collection simultaneously, leading to inconsistent results. If thread safety is required,       
+       the synchronized version of HashSet, called Collections.synchronizedSet(), can be used.
+    5. HashSet does not maintain any order of its elements.
