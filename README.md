@@ -55,3 +55,9 @@ One of the common problems in multi-threading is the issue of synchronization. S
     4. HashSet is not thread-safe, which means that multiple threads can modify the collection simultaneously, leading to inconsistent results. If thread safety is required,       
        the synchronized version of HashSet, called Collections.synchronizedSet(), can be used.
     5. HashSet does not maintain any order of its elements.
+
+* `Hash Table` is a data structure that organizes data using hash functions to support quick insertion and search.
+* The key idea of Hash Table is to use a hash function to map keys to buckets.
+  1. When we insert a new key, the hash function will decide which bucket the key should be assigned and the key will be stored in the corresponding bucket;
+  2. When we want to search for a key, the hash table will use the same hash function to find the corresponding bucket and search only in the specific bucket.
+
