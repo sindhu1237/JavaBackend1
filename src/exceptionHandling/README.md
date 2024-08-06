@@ -92,3 +92,21 @@ No catch blocks for this.
     2. will not check at compiletime.
     3. Java will not force to handle exceptions.
     4. can be handled by safe coding.
+
+
+**Custom Exception**
+- When to make a custom exception?
+- how to make a custom exception?
+- how to use a custom exception?
+
+* When we are already throwing exception inside method, then why do we have to declare 'throws exception'?
+- we need to tell client our method is going to throw exception try to handle it.
+
+
+**throw vs throws**
+**throws** :
+- it doesn't throw an exception
+- it is just a declaration on a method to let clients know that this method can cause what kind of exception. So, that clients can do exception handling and fix their code.
+
+**throw** :
+- 
