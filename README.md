@@ -61,3 +61,9 @@ One of the common problems in multi-threading is the issue of synchronization. S
   1. When we insert a new key, the hash function will decide which bucket the key should be assigned and the key will be stored in the corresponding bucket;
   2. When we want to search for a key, the hash table will use the same hash function to find the corresponding bucket and search only in the specific bucket.
 
+### Cons of Reflection API
+1. Breaks Encapsulation
+2. Performance slow
+
+
+### Annotations + Reflections

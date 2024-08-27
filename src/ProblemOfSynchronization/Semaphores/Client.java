@@ -8,7 +8,7 @@ import java.util.concurrent.Semaphore;
 public class Client {
     public static void main(String[] args) {
         Queue<Object> store = new LinkedList<>();
-//        HashSet<String> peopleInsideTheStore = new HashSet<>();
+        HashSet<String> peopleInsideTheStore = new HashSet<>();
         int cap = 5;
         Semaphore ps = new Semaphore(5);
         Semaphore cs = new Semaphore(0);
@@ -17,6 +17,7 @@ public class Client {
             Producer p = new Producer("p" + i, ps, cs, store);
             Thread tforp = new Thread(p);
             tforp.start();
+
 
 //            Consumer c = new Consumer("c"+i, ps, cs, store, peopleInsideTheStore);
             Consumer c = new Consumer("c" + i, ps, cs, store);
